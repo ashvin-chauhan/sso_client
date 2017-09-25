@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+@media (min-width: 1200px) {
+	
+}
+@media screen and (max-width:994px){
+}
+@media screen and (max-width:1055px){
+}
+
+@media screen and (max-width:900px){
+}
+@media screen and (max-width:768px){
+	.right-panel{
+		width:100%;
+		max-width:inherit;
+		height:auto;
+		display:inline-block;
+		position:static;
+	}
+	.left-panel .welocme-block{
+		padding:15px;
+	}
+	.left-panel .welocme-block figcaption{
+		padding:0;
+	}
+	.left-panel .welocme-block figure {
+		margin-top: 20px;
+		position: static;
+		text-align: center;
+		transform: none;
+		width: 100%;
+	}
+	.left-panel .welocme-block p,
+	.left-panel .welocme-block h2{
+		text-align:center;
+		padding:0;
+	}
+	#paragraphs > div.cascade-div-selected .big-info{
+		padding:30px 15px;
+	}
+	#paragraphs > div h2{
+		font-size:20px;
+	}
+	#paragraphs > div p{
+		font-size:16px;
+	}
+	#paragraphs > div.cascade-div-selected .big-info a{
+		font-size: 16px;
+		padding: 0 42px 0 22px;
+	}
+	.nav-content-holder > div > ul{
+		display:block;
+	}
+	.nav-content-holder > div > ul > li{
+		width:100%;
+		margin-bottom:20px;
+	}
+	header .language-holder,
+	.after-login-holder,
+	header .contact-holder{
+		transform:none;
+	}
+	header .contact-holder{
+		margin-left:14px;
+	}
+	header .others-holders {
+		display: inline-block;
+		float: none;
+		position: static;
+		width: 100%;
+		margin-top:15px;
+	}
+	header .logo-holder {
+		display: inline-block;
+		float: right;
+		height: auto;
+		position: static;
+		transform: none;
+	}
+	header{
+		padding-top:10px;
+	}
+	#parentHorizontalTab ul.resp-tabs-list{
+		display:none;
+	}
+	.other-infos,
+	.side-nav{
+		width:100%;
+	}
+	#developerTab .resp-tabs-list{
+		display:none;
+	}
+	.sp-table{
+		overflow-x:scroll
+	}
+	.sp-table .table{
+		min-width:800px;
+	}
+	#developerTab .table td, #developerTab .table th,
+	#developerTab .resp-tab-content table thead tr th:nth-child(1),
+	#developerTab .resp-tab-content table thead tr th:nth-child(2),
+	#developerTab .resp-tab-content table tbody tr td{
+		padding:15px;
+	}
+	.get-ul li{
+		width:50%;
+	}
+}
+@media screen and (max-width:500px){
+}
+@media screen and (max-width:340px){
+}
