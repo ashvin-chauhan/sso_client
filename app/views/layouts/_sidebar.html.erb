@@ -1,70 +1,37 @@
-<% if current_user[:role] == "manager" %>
-  <div class="right-panel">
-    <div class="link-block">
-      <div class="link-loop">
-        <h2>App Docs</h2>
-        <ul>
-          <li><a href="">Overview</a></li>
-          <li><a href="">Entity Manage</a></li>
-          <li><a href="">Dashboard</a></li>
-          <li><a href="">Entity Search</a></li>
-          <li><a href="">Ref Data Management</a></li>
-        </ul>
-      </div>
-
-      <div class="link-loop">
-        <h2>SDKS</h2>
-        <ul>
-          <li><a class="active" href="">Overview</a></li>
-          <li><a href="">RDF-SDK</a></li>
-          <li><a href="">RUF-SDK</a></li>
-          <li><a href="">APIS</a></li>
-        </ul>
-      </div>
-
-      <div class="link-loop">
-        <h2>Guides</h2>
-        <ul>
-          <li><a href="">App Development</a></li>
-          <li><a href="">App Review</a></li>
-          <li><a href="">Platform Poﬁcies</a></li>
-          <li><a href="">Privacy & Consent</a></li>
-        </ul>
-      </div>
+<div class="right-panel">
+  <div class="link-block">
+    <div class="link-loop">
+      <h2>App Docs</h2>
+      <ul>
+        <li><a href="">Overview</a></li>
+        <li><a href="">Entity Manage</a></li>
+        <li><a href="">Dashboard</a></li>
+        <li><a href="">Entity Search</a></li>
+        <li><a href="">Ref Data Management</a></li>
+      </ul>
     </div>
-    <div class="links-massage">
-      <a href=""><img src="/assets/left-massage-icon.jpg" width="47" height="47"></a>
+
+    <div class="link-loop">
+      <h2>SDKS</h2>
+      <ul>
+        <li><a class="active" href="">Overview</a></li>
+        <li><a href="">RDF-SDK</a></li>
+        <li><a href="">RUF-SDK</a></li>
+        <li><a href="">APIS</a></li>
+      </ul>
+    </div>
+
+    <div class="link-loop">
+      <h2>Guides</h2>
+      <ul>
+        <li><a href="">App Development</a></li>
+        <li><a href="">App Review</a></li>
+        <li><a href="">Platform Poﬁcies</a></li>
+        <li><a href="">Privacy & Consent</a></li>
+      </ul>
     </div>
   </div>
-<% elsif current_user[:role] == "developer" %>
-  <div class="right-panel">
-    <div class="link-block">
-      <div class="link-loop">
-        <h2>App Docs</h2>
-        <ul>
-          <li><a href="">Overview</a></li>
-          <li><a href="">Entity Manage</a></li>
-        </ul>
-      </div>
-
-      <div class="link-loop">
-        <h2>SDKS</h2>
-        <ul>
-          <li><a class="active" href="">Overview</a></li>
-          <li><a href="">APIS</a></li>
-        </ul>
-      </div>
-
-      <div class="link-loop">
-        <h2>Guides</h2>
-        <ul>
-          <li><a href="">App Development</a></li>
-          <li><a href="">App Review</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="links-massage">
-      <a href=""><img src="/assets/left-massage-icon.jpg" width="47" height="47"></a>
-    </div>
+  <div class="links-massage">
+    <a href=""><img src="/assets/left-massage-icon.jpg" width="47" height="47"></a>
   </div>
-<% end %>
+</div>
