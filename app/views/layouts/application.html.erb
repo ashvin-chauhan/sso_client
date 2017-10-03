@@ -3,6 +3,7 @@
 <head>
   <title>Jekyll Integration app</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/ror/sso_client/" />
   <%= yield :cdn_code %>
   <%= javascript_include_tag '//cdn.auth0.com/js/lock/10.0.0/lock.min.js' %>
   <%= stylesheet_link_tag params[:controller] %>
