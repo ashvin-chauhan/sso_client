@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^/?assets/(.*)$ /ror/sso_client/assets/$1 [L,R=301]
