@@ -98,7 +98,7 @@ header .search-holder button{
 	z-index:2;
 	left:30px;
 	top:0;
-	background:rgba(255,255,255,0) url(assets/search.svg) no-repeat 50% 50%;
+	background:rgba(255,255,255,0) url(search.svg) no-repeat 50% 50%;
 	background-size:20px auto;
 	border:none;
 	overflow:hidden;
@@ -113,7 +113,7 @@ header .language-holder{
 	position:relative;
 	top:50%;
 	transform:translateY(-50%);
-	background:url(assets/language-icon.png) no-repeat 0 50%;
+	background:url(language-icon.png) no-repeat 0 50%;
 	padding:0 0 0 25px;
 	margin-right:18px;
 }
@@ -376,7 +376,7 @@ header .others-holders{
 	height:auto;
 	display:block;
 	box-sizing:border-box;
-	background:url(assets/arrow-right.svg) 93% 50% no-repeat;
+	background:url(arrow-right.svg) 93% 50% no-repeat;
 	background-size:auto 13px;
 	font-family: 'Lato', sans-serif;
 	font-size: 15px;
@@ -465,7 +465,7 @@ header .others-holders{
 	display:block;
 	padding:58px 40px 50px 50px;
 	box-sizing:border-box;
-	background:url(assets/welocme-bg.jpg) repeat-y;
+	background:url(welocme-bg.jpg) repeat-y;
 	background-size:100% auto;
 	border-radius: 5px 5px 0px 0px;
 	-moz-border-radius: 5px 5px 0px 0px;
@@ -604,7 +604,7 @@ header .others-holders{
 	height:auto;
 	display:inline-block;
 	border-radius: 100px;
-	background: #ffffff url(assets/nav-arrow-black.png) no-repeat 90% 50%;
+	background: #ffffff url(nav-arrow-black.png) no-repeat 90% 50%;
 	background-size:24px auto;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 	padding:0 68px 0 22px;

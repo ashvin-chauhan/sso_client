@@ -53,7 +53,7 @@ Main Components
   cursor: pointer;
 }
 .cd-accordion-menu label {
-  background: rgba(255,255,255,0) url(assets/plus-icon.png) no-repeat 8px 50%;
+  background: rgba(255,255,255,0) url(plus-icon.png) no-repeat 8px 50%;
   
 }
 /*.cd-accordion-menu label::before {
@@ -71,11 +71,11 @@ Main Components
 }
 .cd-accordion-menu a::after {
   left: 36px;
-  background: url(assets/cd-icons.svg) no-repeat -48px 0;
+  background: url(cd-icons.svg) no-repeat -48px 0;
 }*/
 .cd-accordion-menu input[type=checkbox]:checked + label {
   /* rotate arrow */
-  background: rgba(255,255,255,0) url(assets/minus-icon.png) no-repeat 8px 50%;
+  background: rgba(255,255,255,0) url(minus-icon.png) no-repeat 8px 50%;
   /*-webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
