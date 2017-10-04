@@ -1,6 +1,6 @@
 module ApplicationHelper
   def getAuthUrl(connection: 'Username-Password-Authentication')
-    return sprintf("/ror/sso_client/auth/auth0?connection=%s",connection)
+    return sprintf("#{ENV['RELATIVE_URL']}/auth/auth0?connection=%s",connection)
   end
 
   def current_user
