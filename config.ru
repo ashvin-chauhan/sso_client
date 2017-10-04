@@ -3,9 +3,9 @@
 require ::File.expand_path('../config/environment', __FILE__)
 
 if Rails.env.production?
-	map '/ror/sso_client' do
+	# map '/ror/sso_client' do
 		run Rails.application
-	end
+	# end
 else
 	run Rails.application
 end
