@@ -13,21 +13,86 @@
   <%= javascript_include_tag 'developer_layout' %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="white-bg">
   <div id="hand-over"></div>
   <%= render  'layouts/header' %>
   <%= render 'layouts/sidebar' %>
-  <div class="page-wapper">
-    <div class="container-fluid">
-      <div class="row justify-content-end">
-        <div class="col-xs-12 col-sm-10 col-md-10">
-          <div class="left-panel padding-div">
+  <div class="page-wapper give-height o-wrapper no-paading-top" id="o-wrapper">
+    <div id="top-banner">
+      <div class="image-banner" id="db_one">
+          <div class="up-info">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12">
+                          Explore our Developers' Products
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <%= image_tag "db1.jpg" %>
+      </div>
+      <div class="image-banner" id="db_two">
+          <div class="up-info">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12">
+                          Explore our Developers' Documentation
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <%= image_tag "db2.jpg" %>
+      </div>
+      <div class="image-banner" id="db_three">
+          <div class="up-info">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12">
+                          Explore our Developers' Tools
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <%= image_tag "db3.jpg" %>
+      </div>
+      <div class="image-banner" id="db_four">
+          <div class="up-info">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12">
+                          Connect to our Developers' world
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <%= image_tag "db4.jpg" %>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="left-panel">
             <%= yield %>
           </div>
         </div>
       </div>
     </div>
-  </div>
   <%= render 'layouts/footer' %>
+  </div>
+  <!-- Modal -->
+  <div id="video_modal" class="modal fade" role="dialog">
+    <div class="modal-dialog model-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <iframe allowfullscreen="" width="100%" height="400" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End modal -->
+  <div id="c-mask" class="c-mask"></div>
+  <div id="cookie-notice" role="banner" class="cn-bottom bootstrap" style="color: rgb(255, 255, 255); background-color: rgb(6, 34, 86);">
+      <div class="cookie-notice-container"><span id="cn-notice-text">By using this site, you agree to Riversand <a> privacy policy</a> for enhancing your website experience.</span><a href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie button bootstrap">Ok</a></div>
+  </div>
 </body>
 </html>

@@ -669,7 +669,7 @@ header .others-holders{
 	height:auto;
 	display:inline-block;
 	border-radius: 100px;
-	background: #ffffff url(../images/nav-arrow-black.png) no-repeat 90% 50%;
+	background: #ffffff url("nav-arrow-black.png") no-repeat 90% 50%;
 	background-size:24px auto;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 	padding:0 48px 0 15px;
@@ -1451,7 +1451,7 @@ ul.sp-ul > li li  a{
   margin: 0;
 }
 .site-footer p.email a:before {
-  background: rgba(0, 0, 0, 0) url("../images/ic_footer_at.svg") no-repeat scroll left center / 23px auto;
+  background: rgba(0, 0, 0, 0) url("ic_footer_at.svg") no-repeat scroll left center / 23px auto;
 }
 .site-footer p.phone a:before, .site-footer p.email a:before {
   content: "";
@@ -1479,7 +1479,7 @@ ul.sp-ul > li li  a{
 
 }
 .site-footer p.phone a:before {
-  background: rgba(0, 0, 0, 0) url("../images/ic_footer_phone.svg") no-repeat scroll left center / 21px auto;
+  background: rgba(0, 0, 0, 0) url("ic_footer_phone.svg") no-repeat scroll left center / 21px auto;
   top: 2px;
 }
 .site-footer p.copyright {
@@ -1492,7 +1492,7 @@ ul.sp-ul > li li  a{
 	color:#a4a8ac;
 }
 .site-footer .logo-footer {
-  background-image: url("../images/riversand_logo.svg") !important;
+  background-image: url("riversand_logo.svg") !important;
   background-position: 0 center !important;
 }
 .site-footer .logo-footer {

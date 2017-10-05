@@ -1,37 +1,44 @@
-<!-- <header>
-  <div class="container-fluid">
+<header>
+  <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-2 col-md-2">
-        <div class="hamburger"><a href="#"><img src="assets/hamburger.svg" width="32" height="32"></a></div><div class="logo-holder"><a href="index.html"><img src="assets/logo.png" width="166" height="40"></a></div>
+        <div class="hamburger">
+          <a href="javascript:;" id="c-button--push-left"><img src="assets/hamburger.svg" width="32" height="32"></a>
+        </div>
+        <div class="logo-holder">
+          <a href="index.html"><img src="assets/logo.png" width="166" height="40"></a>
+        </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-6">
-        <div class="search-holder"><button type="submit">search</button><input name="" type="text"></div>
+        <div class="search-holder">
+          <button type="submit">search</button><input name="" type="text">
+        </div>
       </div>
       <div class="col-xs-12 col-sm-4 col-md-4">
         <div class="others-holders">
-        <div class="language-holder">
-          <select id="select-language">
-            <option>EN</option>
-            <option>BN</option>
-            <option>CN</option>
-          </select>
+          <div class="language-holder">
+            <select id="select-language">
+              <option>EN</option>
+              <option>BN</option>
+              <option>CN</option>
+            </select>
           </div>
-          <%# if is_logged_in? %>
-            <div class="after-login-holder">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <div class="pp"><img src="assets/pic.png" width="32" height="32"></div>
-                  <div class="pro-info"><%#= current_user[:full_name] %><br><span><%#= current_user[:role] %></span></div>
-              </a>
-              <div class="dropdown-menu" role="menu">
-                <div class="content">
-                  <ul>
-                    <li><h2>My Profile </h2><span><%#= current_user[:email] %></span><a href="#" class="my-setting"></a></li>
-                      <li><a href="auth/logout">Logout</a></li>
-                  </ul>
-                </div>
+          <% if is_logged_in? %>
+          <div class="after-login-holder">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <div class="pp"><img src="assets/pic.png" width="32" height="32"></div>
+              <div class="pro-info"><%= current_user[:full_name] %><br><span><%= current_user[:role] %></span></div>
+            </a>
+            <div class="dropdown-menu" role="menu">
+              <div class="content">
+                <ul>
+                  <li><h2>My Profile </h2><span><%= current_user[:email] %></span><a href="#" class="my-setting"></a></li>
+                  <li><a href="auth/logout">Logout</a></li>
+                </ul>
               </div>
             </div>
-          <%# end %>
+          </div>
+          <% end %>
           <div class="contact-holder">
             <a href="#">Contact</a>
           </div>
@@ -39,54 +46,4 @@
       </div>
     </div>
   </div>
-</header> -->
-<header>
-  <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-2 col-md-2">
-              <div class="hamburger">
-                <a href="#" id="c-button--push-left"><img src="assets/hamburger.svg" width="32" height="32"></a>
-              </div>
-              <div class="logo-holder">
-                <a href="index.html"><img src="assets/logo.png" width="166" height="40"></a>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-6">
-              <div class="search-holder">
-                <button type="submit">search</button><input name="" type="text">
-              </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-4 col-md-4">
-              <div class="others-holders">
-              <div class="language-holder">
-                  <select id="select-language">
-                        <option>EN</option>
-                        <option>BN</option>
-                        <option>CN</option>
-                    </select>
-                </div>
-                <% if is_logged_in? %>
-                  <div class="after-login-holder">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      <div class="pp"><img src="assets/pic.png" width="32" height="32"></div>
-                        <div class="pro-info"><%= current_user[:full_name] %><br><span><%= current_user[:role] %></span></div>
-                    </a>
-                    <div class="dropdown-menu" role="menu">
-                      <div class="content">
-                        <ul>
-                          <li><h2>My Profile </h2><span><%= current_user[:email] %></span><a href="#" class="my-setting"></a></li>
-                            <li><a href="auth/logout">Logout</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                <% end %>
-                <div class="contact-holder">
-                  <a href="#">Contact</a>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </header>

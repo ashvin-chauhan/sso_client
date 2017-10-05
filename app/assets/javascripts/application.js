@@ -29,7 +29,7 @@
 //= require jquery-equal-height
 //= require menu
 
-$(document).ready(function(){
+document.addEventListener("turbolinks:load", function() {
 	////////////////////
 	/*$('#desktopnemu').meanmenu({
 		meanScreenWidth     : "800",
@@ -59,7 +59,6 @@ $(document).ready(function(){
 	function makeSameHeight(getele){
 		var spDivH = 0;
 		$(getele).each(function( index ) {
-			console.log( index + ": " + $( this ).text() );
 			var th = $( this ).height();
 			if(th > spDivH){
 				spDivH = th;
@@ -80,7 +79,6 @@ $(document).ready(function(){
 	//$('#paragraphs').cascadingDivs();
 	var sph = 0;
 	$('.nav-content-holder > div').each(function( index ) {
-		console.log( index + ": " + $( this ).text() );
 		var th = $( this ).outerHeight();
 		if(th > sph){
 			sph = th;
