@@ -16,7 +16,6 @@
 <body class="inner-bg">
   <div id="hand-over"></div>
   <%= render  'layouts/header' %>
-  <%= render 'layouts/sidebar' %>
   <div class="page-wapper give-height o-wrapper" id="o-wrapper">
     <div id="top-banner">
       <div class="inner-banner">
@@ -24,12 +23,12 @@
           <div class="container">
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-12">
-                User's Documentation
+                Administrator’s Documentation
               </div>
             </div>
           </div>
         </div>
-        <img src="administrator_documentation.jpg">
+        <%= image_tag "administrator_documentation.jpg" %>
       </div>
     </div>
     <div class="container">
@@ -41,22 +40,10 @@
         </div>
       </div>
     </div>
-  </div>
   <%= render 'layouts/footer' %>
-  <!-- Modal -->
-  <div id="video_modal" class="modal fade" role="dialog">
-    <div class="modal-dialog model-lg">
-      <div class="modal-content">
-        <div class="modal-body">
-          <iframe allowfullscreen="" width="100%" height="400" frameborder="0"></iframe>
-        </div>
-      </div>
-    </div>
+
   </div>
-  <!-- End modal -->
+  <%= render 'layouts/sidebar' %>
   <div id="c-mask" class="c-mask"></div>
-  <div id="cookie-notice" role="banner" class="cn-bottom bootstrap" style="color: rgb(255, 255, 255); background-color: rgb(6, 34, 86);">
-     <div class="cookie-notice-container"><span id="cn-notice-text">By using this site, you agree to Riversand <a> privacy policy</a> for enhancing your website experience.</span><a href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie button bootstrap">Ok</a></div>
-  </div>
 </body>
 </html>

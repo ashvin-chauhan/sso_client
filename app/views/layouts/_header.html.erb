@@ -6,7 +6,7 @@
           <a href="javascript:;" id="c-button--push-left"><img src="assets/hamburger.svg" width="32" height="32"></a>
         </div>
         <div class="logo-holder">
-          <a href="index.html"><img src="assets/logo.png" width="166" height="40"></a>
+          <a href="javascript:;"><img src="assets/logo.png" width="166" height="40"></a>
         </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-6">
@@ -25,14 +25,14 @@
           </div>
           <% if is_logged_in? %>
           <div class="after-login-holder">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
               <div class="pp"><img src="assets/pic.png" width="32" height="32"></div>
               <div class="pro-info"><%= current_user[:full_name] %><br><span><%= current_user[:role] %></span></div>
             </a>
             <div class="dropdown-menu" role="menu">
               <div class="content">
                 <ul>
-                  <li><h2>My Profile </h2><span><%= current_user[:email] %></span><a href="#" class="my-setting"></a></li>
+                  <li><h2>My Profile </h2><span><%= current_user[:email] %></span><a href="javascript:;" class="my-setting"></a></li>
                   <li><a href="auth/logout">Logout</a></li>
                 </ul>
               </div>
@@ -40,7 +40,7 @@
           </div>
           <% end %>
           <div class="contact-holder">
-            <a href="#">Contact</a>
+            <a href="javascript:;">Contact</a>
           </div>
         </div>
       </div>

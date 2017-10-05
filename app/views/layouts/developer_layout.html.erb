@@ -16,7 +16,6 @@
 <body class="white-bg">
   <div id="hand-over"></div>
   <%= render  'layouts/header' %>
-  <%= render 'layouts/sidebar' %>
   <div class="page-wapper give-height o-wrapper no-paading-top" id="o-wrapper">
     <div id="top-banner">
       <div class="image-banner" id="db_one">
@@ -90,9 +89,7 @@
     </div>
   </div>
   <!-- End modal -->
+  <%= render 'layouts/sidebar' %>
   <div id="c-mask" class="c-mask"></div>
-  <div id="cookie-notice" role="banner" class="cn-bottom bootstrap" style="color: rgb(255, 255, 255); background-color: rgb(6, 34, 86);">
-      <div class="cookie-notice-container"><span id="cn-notice-text">By using this site, you agree to Riversand <a> privacy policy</a> for enhancing your website experience.</span><a href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie button bootstrap">Ok</a></div>
-  </div>
 </body>
 </html>

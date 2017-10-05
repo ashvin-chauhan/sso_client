@@ -28,7 +28,7 @@
 //= require menu
 
 
-$(document).on('turbolinks:load', function() {
+document.addEventListener("turbolinks:load", function() {
 	////////////////////
 	/*$('#desktopnemu').meanmenu({
 	    meanScreenWidth     : "800",
@@ -152,7 +152,7 @@ $(document).on('turbolinks:load', function() {
 	})
 	/////
 });
-$(document).on('turbolinks:load', function() {
+$(window).load(function() {
     var getdocH = $(document).height();
     var getwinH = $(window).height();
     var getwinW = $(window).width();
