@@ -1,67 +1,82 @@
 <div class="welocme-block">
-	<figcaption>
-		<h2>Welcome to Riversand's Data Platform Help Center!</h2>
+  <figcaption>
+    <h2>Welcome to Riversand's Data Platform Documentation!</h2>
     <p>
-    Riversand's Data Platform is a new innovative next generation Master Data Management (MDM 2.0) that focuses to provide Relevance, Trust, and Insights for your master data through various components of the Data Continuum such as Governance, Analytics, Inferences, and Insights.
+      Riversand's Data Platform (RDP) is a new innovative next generation Master Data Management (MDM 2.0) platform that provides Relevance, Trust, and Insights of your master data through various components of the Data Continuum such as Governance, Analytics, Inferences, and Insights.
     </p>
     <a href="#">Learn More</a>
   </figcaption>
-  <figure><img src="assetscardgraphic.svg"></figure>
+  <figure><%= image_tag 'cardgraphic.svg' %></figure>
 </div>
+
 <div class="nav-holder">
-	<div id="paragraphs">
-    	<div data-id="developers-users">
-        <div class="info">
-        	<div class="pull-right">
-            <h2>Developers<br>Users</h2>
-            <span><img src="assets/nav-arrow.png" width="32" height="32"></span>
-          </div>
-        </div>
-        <div class="big-info">
-        	<div class="sp-right">
-            <h2>Developers</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis.</p>
-            <a href="developers.html">Learn More</a>
-          </div>
+  <div class="nav-items">
+    <div data-id="developers-users">
+      <div class="info">
+        <div class="pull-right">
+          <h2>Developers</h2>
+          <span><img src="images/nav-arrow.png" height="32" width="32"></span>
         </div>
       </div>
-      <div data-id="business-users">
-        <div class="info">
-        	<div class="pull-right">
-            <h2>Business<br>Users</h2>
-            <span><img src="assetsnav-arrow.png" width="32" height="32"></span>
-            </div>
-        </div>
-        <div class="big-info">
-        	<div class="sp-right">
-            <h2>Business Users</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis.</p>
-            <a href="business_users.html">Learn More</a>
-            </div>
+      <div class="big-info">
+        <div class="sp-right">
+          <h2>Developers</h2>
+          <p>Build application logic and web components to manage your relevant, trust, and insights data!</p>
+          <ul class="blue-txt">
+            <li>Building functionality and UI components using Riversand Data Platform services.</li>
+            <li>Integrating all business processes and making sure all downstream systems can establish communication via Restful APIs.</li>
+          </ul>
+          <a href="developers.html">Learn More</a>
         </div>
       </div>
-      <div data-id="business-admins">
-        <div class="info">
-        	<div class=" pull-right">
-            <h2>Business<br>Admins</h2>
-            <span><img src="assetsnav-arrow.png" width="32" height="32"></span>
-            </div>
-        </div>
-        <div class="big-info">
-        	<div class="sp-right">
-            <h2>Business Admins</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis.</p>
-            <a href="business_admins.html">Learn More</a>
-            </div>
+    </div>
+    <div data-id="business-users">
+      <div class="info">
+        <div class="pull-right">
+          <h2>Business<br>Users</h2>
+          <span><img src="images/nav-arrow.png" width="32" height="32"></span>
         </div>
       </div>
+      <div class="big-info">
+        <div class="sp-right">
+          <h2>Business Users</h2>
+          <p>Manage data that resides within the system including Vendors, Buyers, and Business Users.</p>
+          <ul class="blue-txt">
+            <li>Introducing new products to the consumers.</li>
+            <li>Managing, maintaining, and operating the on-boarding of product content.</li>
+          </ul>
+          <a href="business_users.html">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div data-id="business-admins">
+      <div class="info">
+        <div class=" pull-right">
+          <h2>Business<br>Admins</h2>
+          <span><img src="images/nav-arrow.png" width="32" height="32"></span>
+        </div>
+      </div>
+      <div class="big-info">
+        <div class="sp-right">
+          <h2>Business Admins</h2>
+          <p>Play a vital role in getting your company's data managed properly. </p>
+          <ul class="blue-txt">
+            <li>Customizing and setting up the application menus, layouts, and business rules and more.</li>
+            <li>Creating new users and groups and granting permissions to the application and data and more.</li>
+            <li>Preparing and loading data model</li>
+            <li>Importing and exporting of data.</li>
+          </ul>
+          <a href="business_admins.html">Learn More</a>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="nav-content-holder">
-  	<div id="developers-users">
-    	<ul>
-      	<li>
+    <div id="default-users">
+      <ul>
+        <li>
           <div class="link-box">
-            <h2>RDF – SDK</h2>
+            <h2>Welcome</h2>
             <h3>Build business logic to manage your data!</h3>
             <ul>
               <li>Getting Started including Data Classification and Data Framework Architecture</li>
@@ -111,113 +126,186 @@
         </li>
       </ul>
     </div>
+    <div id="developers-users">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="full-box">
+            <div class="loop-box">
+              <h3 class="title">Developers</h3>
+              <div class="body-text">
+                <p>
+                  Build application logic and web components to manage your relevant, trust, and insights data!
+                </p>
+                <ul class="blue-txt">
+                  <li>Building functionality and UI components using Riversand Data Platform services.</li>
+                  <li>Integrating all business processes and making sure all downstream systems can establish communication via Restful APIs.</li>
+                </ul>
+              </div>
+              <a class="blue-button" href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="business-users">
-    	<ul>
-      	<li>
-          <div class="link-box">
-            <h2>RDF – SDK</h2>
-            <h3>Build business logic to manage your data!</h3>
-            <ul>
-              <li>Getting Started including Data Classification and Data Framework Architecture</li>
-              <li>Using the API</li>
-              <li>Diagnostic Tracing and Reports</li>
-              <li>Upgrading SDK</li>
-              <li>Integrating with Tools</li>
-              <li>Downloads</li>
-              <li>FAQs</li>
-              <li>Release Notes</li>
-            </ul>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="full-box">
+            <div class="loop-box">
+              <h3 class="title">Business Users</h3>
+              <div class="body-text">
+                <p>
+                  Manage data that resides within the system including Vendors, Buyers, and Business Users.
+                </p>
+                <ul class="blue-txt">
+                  <li>Introducing new products to the consumers.</li>
+                  <li>Managing, maintaining, and operating the on-boarding of product content.</li>
+                </ul>
+              </div>
+              <a class="blue-button" href="#">Learn More</a>
+            </div>
           </div>
-        </li>
-        <li>
-          <div class="link-box">
-            <h2>RDF – SDK</h2>
-            <h3>Develop user interface for next generation web apps!</h3>
-            <ul>
-              <li>Getting Started including UI Framework Architecture</li>
-              <li>Using UI Framework Components</li>
-              <li>Using UI Integration Framework</li>
-              <li>Build Custom Apps</li>
-              <li>Troubleshooting</li>
-              <li>Upgrading SDK</li>
-              <li>Integrating with Tools</li>
-              <li>Downloads</li>
-              <li>FAQs</li>
-              <li>Release Notes</li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <div class="link-box">
-            <h2>APIs</h2>
-            <h3>Build business logic to manage your data!</h3>
-            <ul>
-              <li>Getting Started</li>
-              <li>Pre-requisites for API Development</li>
-              <li>Supported Services</li>
-              <li>API Testing</li>
-              <li>API Error Handling & Troubleshooting</li>
-              <li>Supported Services</li>
-              <li>API Testing</li>
-              <li>API Error Handling & Troubleshooting</li>
-            </ul>
-          </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
     <div id="business-admins">
-    	<ul>
-      	<li>
-          <div class="link-box">
-            <h2>RDF – SDK</h2>
-            <h3>Build business logic to manage your data!</h3>
-            <ul>
-              <li>Getting Started including Data Classification and Data Framework Architecture</li>
-              <li>Using the API</li>
-              <li>Diagnostic Tracing and Reports</li>
-              <li>Upgrading SDK</li>
-              <li>Integrating with Tools</li>
-              <li>Downloads</li>
-              <li>FAQs</li>
-              <li>Release Notes</li>
-            </ul>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="full-box">
+            <div class="loop-box">
+              <h3 class="title">Business Admins</h3>
+              <div class="body-text">
+                <p>
+                  Play a vital role in getting your company's data managed properly.
+                </p>
+                <ul class="blue-txt">
+                  <li>Customizing and setting up the application menus, layouts, and business rules and more.</li>
+                  <li>Creating new users and groups and granting permissions to the application and data and more.</li>
+                  <li>Preparing and loading data model</li>
+                  <li>Importing and exporting of data.</li>
+                </ul>
+              </div>
+              <a class="blue-button" href="#">Learn More</a>
+            </div>
           </div>
-        </li>
-        <li>
-          <div class="link-box">
-            <h2>RDF – SDK</h2>
-            <h3>Develop user interface for next generation web apps!</h3>
-            <ul>
-              <li>Getting Started including UI Framework Architecture</li>
-              <li>Using UI Framework Components</li>
-              <li>Using UI Integration Framework</li>
-              <li>Build Custom Apps</li>
-              <li>Troubleshooting</li>
-              <li>Upgrading SDK</li>
-              <li>Integrating with Tools</li>
-              <li>Downloads</li>
-              <li>FAQs</li>
-              <li>Release Notes</li>
-            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="interest-block">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <h2>Interested to know our various solutions to realize the value from your data?</h2>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 col-md-4 same-height">
+      <div class="full-box">
+        <div class="loop-box">
+          <h3 class="title">Multi-Domain Master Data Management</h3>
+          <div class="body-text">
+            Unify Master Data Across Domains on a Single Platform
           </div>
-        </li>
-        <li>
-          <div class="link-box">
-            <h2>APIs</h2>
-            <h3>Build business logic to manage your data!</h3>
-            <ul>
-              <li>Getting Started</li>
-              <li>Pre-requisites for API Development</li>
-              <li>Supported Services</li>
-              <li>API Testing</li>
-              <li>API Error Handling & Troubleshooting</li>
-              <li>Supported Services</li>
-              <li>API Testing</li>
-              <li>API Error Handling & Troubleshooting</li>
-            </ul>
+          <a class="blue-button" target="_blank" href="http://www.riversand.com/solutions/multi-domain-master-data-management/what-is-mdm/">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 col-md-4 same-height">
+      <div class="full-box blue-border">
+        <div class="loop-box">
+          <h3 class="title">Product Information Management (PIM)</h3>
+          <div class="body-text">
+            Trusted Source of Product Information for your Enterprise
           </div>
-        </li>
-      </ul>
+          <a class="blue-button" target="_blank" href="http://www.riversand.com/solutions/product-information-management/what-is-pim/">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 col-md-4 same-height">
+      <div class="full-box purple-border">
+        <div class="loop-box">
+          <h3 class="title">Digital Asset Management</h3>
+          <div class="body-text">
+            Seamless Integrate Digital Assets with Product Information
+          </div>
+          <a class="blue-button" target="_blank" href="http://www.riversand.com/solutions/digital-asset-management/overview/">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 col-md-4 same-height">
+      <div class="full-box orange-border">
+        <div class="loop-box">
+          <h3 class="title">Data Onboarding</h3>
+          <div class="body-text">
+            Onboard Vendor Data with Checks for Quality and Governance
+          </div>
+          <a class="blue-button" href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 col-md-4 same-height">
+      <div class="full-box red-border">
+        <div class="loop-box">
+          <h3 class="title">Customer Information Management</h3>
+          <div class="body-text">
+            Know your Customer Across Channels and Along Purchase Lifecycle
+          </div>
+          <a class="blue-button" href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 col-md-4 same-height">
+      <div class="full-box green-border">
+        <div class="loop-box">
+          <h3 class="title">Data Integration and Syndication</h3>
+          <div class="body-text">
+            Integrate and Syndicate Data Across Supply Chain
+          </div>
+          <a class="blue-button" href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 col-md-4 same-height">
+      <div class="full-box">
+        <div class="loop-box">
+          <h3 class="title">Material Master Management</h3>
+          <div class="body-text">
+            Rationalize Inventory with a Robust Material Master
+          </div>
+          <a class="blue-button" href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 col-md-4 same-height">
+      <div class="full-box blue-border">
+        <div class="loop-box">
+          <h3 class="title">Print Solution</h3>
+          <div class="body-text">
+            Extend your Product Information and Digital Assets to Print
+          </div>
+          <a class="blue-button" href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 col-md-4 same-height">
+      <div class="full-box purple-border">
+        <div class="loop-box">
+          <h3 class="title">Spare Parts Management</h3>
+          <div class="body-text">
+            Don’t let Spare Parts Bring your Capex Project Down
+          </div>
+          <a class="blue-button" href="#">Learn More</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>

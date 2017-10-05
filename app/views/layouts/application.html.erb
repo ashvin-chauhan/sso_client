@@ -15,17 +15,18 @@
   <div id="hand-over"></div>
   <%= render  'layouts/header' %>
   <%= render 'layouts/sidebar' %>
-  <div class="page-wapper">
-    <div class="container-fluid">
-      <div class="row justify-content-end">
-        <div class="col-xs-12 col-sm-10 col-md-10">
-          <div class="left-panel padding-div">
+  <div class="page-wapper o-wrapper" id="o-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="left-panel">
             <%= yield %>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div id="c-mask" class="c-mask"></div>
   <%= render 'layouts/footer' %>
 </body>
 </html>
