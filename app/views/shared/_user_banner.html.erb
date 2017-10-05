@@ -1,0 +1,14 @@
+<div id="top-banner">
+      <div class="inner-banner">
+        <div class="up-info">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12">
+                <%= current_user[:role] == "admin" ? "Administrator’s Documentation" : "User’s Documentation"%>
+              </div>
+            </div>
+          </div>
+        </div>
+        <%= image_tag "administrator_documentation.jpg" %>
+      </div>
+    </div>
