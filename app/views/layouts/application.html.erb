@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <% if Rails.env.production? %>
     <base href="/ror/sso_client/" />
+  <% else %>
+    <base href="/" />
   <% end %>
   <%= yield :cdn_code %>
   <%= javascript_include_tag '//cdn.auth0.com/js/lock/10.0.0/lock.min.js' %>
@@ -22,6 +24,9 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
           <div class="left-panel">
+            <% flash.each do |message_type, message| %>
+              <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
+            <% end %>
             <%= yield %>
           </div>
         </div>

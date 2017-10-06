@@ -25,3 +25,9 @@
  *= require style
  *= require responsive
  */
+
+.alert-notice, .alert-alert{
+	color: #666f75;
+  background-color: #bce8f1;
+  border-color: #bce8f1;
+}

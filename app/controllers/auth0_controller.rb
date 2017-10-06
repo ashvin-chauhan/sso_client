@@ -12,7 +12,7 @@ class Auth0Controller < ApplicationController
       redirect_to session[:target_url]
       session.delete(:target_url)
     else
-      redirect_to dashboard_path
+      redirect_to get_user_target_url_with_relative_url
     end
   end
 

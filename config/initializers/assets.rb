@@ -1,1 +1,1 @@
-Rails.application.config.assets.precompile += %w( dashboard.css developer_layout.css home.css developer_layout.js manager_layout.css manager_layout.js  )
+Rails.application.config.assets.precompile += %w( dashboard.css developer_layout.css home.css developer_layout.js manager_layout.css manager_layout.js users.scss users.coffee  )

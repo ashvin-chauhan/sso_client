@@ -33,7 +33,7 @@
               <div class="content">
                 <ul>
                   <li><h2>My Profile </h2><span><%= current_user[:email] %></span><a href="javascript:;" class="my-setting"></a></li>
-                  <li><a href="auth/logout">Logout</a></li>
+                  <li><%= link_to "Logout", auth_logout_path %></li>
                 </ul>
               </div>
             </div>
