@@ -11,7 +11,6 @@
 // about supported directives.
 //
 
-//= require turbolinks
 //= require jquery
 //= require jquery_ujs
 //= require owl.carousel
@@ -28,8 +27,9 @@
 //= require jquery.mCustomScrollbar.concat.min
 //= require jquery-equal-height
 //= require menu
+//= require turbolinks
 
-document.addEventListener("turbolinks:load", function() {
+function layoutLoad() {
 	////////////////////
 	/*$('#desktopnemu').meanmenu({
 		meanScreenWidth     : "800",
@@ -139,8 +139,17 @@ document.addEventListener("turbolinks:load", function() {
 	})
 	$('.nav-items > div:nth-child(1)').click();
 	/////
+}
+
+document.addEventListener("turbolinks:load", function() {
+	layoutLoad()
 });
-$(window).load(function() {
+
+$( document ).ready(function() {
+  layoutLoad()
+});
+
+document.addEventListener("turbolinks:load", function() {
 	var getdocH = $(document).height();
 	var getwinH = $(window).height();
 	var getwinW = $(window).width();

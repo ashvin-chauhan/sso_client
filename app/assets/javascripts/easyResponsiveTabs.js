@@ -192,7 +192,7 @@
                         if (historyApi) {
                             var currentHash = window.location.hash;
                             var tabAriaParts = $tabAria.split('tab_item-');
-                            // var newHash = respTabsId + (parseInt($tabAria.substring(9), 10) + 1).toString();
+                            var newHash = respTabsId + (parseInt($tabAria.substring(9), 10) + 1).toString();
                             var newHash = respTabsId + (parseInt(tabAriaParts[1], 10) + 1).toString();
                             if (currentHash != "") {
                                 var re = new RegExp(respTabsId + "[0-9]+");
@@ -206,8 +206,7 @@
                             else {
                                 newHash = '#' + newHash;
                             }
-
-                            history.replaceState(null, null, newHash);
+                            history.pushState(null, null, document.URL.split("#")[0] + newHash);
                         }
                     });
 

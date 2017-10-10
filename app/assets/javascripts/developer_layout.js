@@ -10,7 +10,6 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require turbolinks
 //= require jquery
 //= require jquery_ujs
 //= require owl.carousel
@@ -26,6 +25,7 @@
 //= require jquery.mCustomScrollbar.concat.min
 //= require accordion-main
 //= require menu
+//= require turbolinks
 
 
 document.addEventListener("turbolinks:load", function() {
@@ -92,6 +92,7 @@ document.addEventListener("turbolinks:load", function() {
 	        var $name = $('span', $info);
 	        var gname = $(this).attr('data-pic');
 	        //alert(gname);
+	        console.log(gname)
 	        $('#top-banner .image-banner:not(#' + gname + ')').fadeOut('fast');
 	        $('#top-banner .image-banner#' + gname).fadeIn('fast');
 	        //$name.text($tab.text());
@@ -152,7 +153,7 @@ document.addEventListener("turbolinks:load", function() {
 	})
 	/////
 });
-$(window).load(function() {
+document.addEventListener("turbolinks:load", function() {
     var getdocH = $(document).height();
     var getwinH = $(window).height();
     var getwinW = $(window).width();

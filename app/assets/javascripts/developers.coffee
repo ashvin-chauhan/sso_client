@@ -1,7 +1,5 @@
 document.addEventListener 'turbolinks:load', ->
   #//////////////////
-  console.log('turbolinks:load');
-
   ###$('#desktopnemu').meanmenu({
   meanScreenWidth     : "800",
   meanMenuContainer   : '#hand-over'
@@ -62,14 +60,7 @@ document.addEventListener 'turbolinks:load', ->
     event.preventDefault()
     $('#cookie-notice').fadeOut 'fast'
     return
-  #/////
-  #side-nav
-  getSNH = $('.page-wapper').height()
-  #alert(getSNH);
-  if $(window).width() > 768
-    $('.side-nav').css({'min-height':0});
-  else
-  #
+
   $('select').selectric()
   #
   $('#paragraphs').cascadingDivs()
@@ -95,8 +86,7 @@ document.addEventListener 'turbolinks:load', ->
     return
   #///
   return
-$(window).load ->
-  console.log('in load');
+$(document).ready ->
   getdocH = $(document).height()
   getwinH = $(window).height()
   getwinW = $(window).width()
@@ -114,4 +104,12 @@ $(window).load ->
   $('.right-panel .link-block').mCustomScrollbar()
   #}
   #/
+  #
+  #/////
+  #side-nav
+  getSNH = $('.page-wapper').height()
+  #alert(getSNH);
+  if $(window).width() > 768
+    $('.side-nav').css({'min-height':0});
+  #
   return
