@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-	layout :fetch_layout
-	include Secured
+	layout :fetch_layout, except: [:logout]
+	before_action :logged_in_using_omniauth?, except: [:logout]
 
 	def super_admin
 		redirect_to root_path, notice: "You are not authorized." unless current_user[:role] === "super_admin"
@@ -16,6 +16,9 @@ class UsersController < ApplicationController
 
 	def developer
 		redirect_to root_path, notice: "You are not authorized." unless current_user[:role] === "developer" || current_user[:role] === "super_admin"
+	end
+
+	def logout
 	end
 
 	private

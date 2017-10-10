@@ -1,6 +1,6 @@
 class DevelopersController < ApplicationController
-	include Secured
-	layout "developer_layout"
+  layout "developer_layout"
+	before_action :logged_in_using_omniauth?
 	before_action :check_authentication
 
   def restful_api

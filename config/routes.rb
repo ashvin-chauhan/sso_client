@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   get 'developers/restful_api'
 
-  get 'unauthorized/show'
-
   root to: 'home#show'
   get '/auth/auth0/callback' => 'auth0#callback'
   get '/auth/failure' => 'auth0#failure'
@@ -16,6 +14,7 @@ Rails.application.routes.draw do
   		get 'manager'
   		get 'developer'
       get 'developers/restful_api'
+      get 'logout'
   	end
   end
 end

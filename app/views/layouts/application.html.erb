@@ -21,16 +21,10 @@
   <%= render 'layouts/sidebar' %>
   <div class="page-wapper o-wrapper" id="o-wrapper">
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-          <div class="left-panel">
-            <% flash.each do |message_type, message| %>
-              <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
-            <% end %>
-            <%= yield %>
-          </div>
-        </div>
-      </div>
+      <% flash.each do |message_type, message| %>
+        <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
+      <% end %>
+      <%= yield %>
     </div>
   </div>
   <div id="c-mask" class="c-mask"></div>

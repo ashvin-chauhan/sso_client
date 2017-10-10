@@ -20,7 +20,7 @@ class Auth0Controller < ApplicationController
     if session[:userinfo].present? then
       session.delete(:userinfo)
     end
-    redirect_to sprintf("https://%s/v2/logout?federated&returnTo=%s",ENV["AUTH0_DOMAIN"],unauthorized_show_url)
+    redirect_to sprintf("https://%s/v2/logout?federated&returnTo=%s",ENV["AUTH0_DOMAIN"],logout_users_url)
   end
 
   def sso
