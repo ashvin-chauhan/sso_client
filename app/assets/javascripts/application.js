@@ -27,9 +27,8 @@
 //= require jquery.mCustomScrollbar.concat.min
 //= require jquery-equal-height
 //= require menu
-//= require turbolinks
 
-function layoutLoad() {
+$(document).ready(function(){
 	////////////////////
 	/*$('#desktopnemu').meanmenu({
 		meanScreenWidth     : "800",
@@ -139,17 +138,9 @@ function layoutLoad() {
 	})
 	$('.nav-items > div:nth-child(1)').click();
 	/////
-}
-
-document.addEventListener("turbolinks:load", function() {
-	layoutLoad()
 });
 
-$( document ).ready(function() {
-  layoutLoad()
-});
-
-document.addEventListener("turbolinks:load", function() {
+$(window).load(function() {
 	var getdocH = $(document).height();
 	var getwinH = $(window).height();
 	var getwinW = $(window).width();

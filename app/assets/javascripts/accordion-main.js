@@ -1,4 +1,4 @@
-document.addEventListener("turbolinks:load", function() {
+jQuery(document).ready(function(){
 	var accordionsMenu = $('.cd-accordion-menu');
 
 	if( accordionsMenu.length > 0 ) {

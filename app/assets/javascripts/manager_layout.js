@@ -10,7 +10,6 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require turbolinks
 //= require jquery
 //= require jquery_ujs
 //= require owl.carousel
@@ -28,7 +27,7 @@
 //= require menu
 
 
-document.addEventListener("turbolinks:load", function() {
+$(document).ready(function(){
         ////////////////////
         /*$('#desktopnemu').meanmenu({
             meanScreenWidth     : "800",

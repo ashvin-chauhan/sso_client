@@ -1,4 +1,4 @@
-document.addEventListener 'turbolinks:load', ->
+$(document).ready ->
   #//////////////////
   ###$('#desktopnemu').meanmenu({
   meanScreenWidth     : "800",
@@ -86,7 +86,7 @@ document.addEventListener 'turbolinks:load', ->
     return
   #///
   return
-$(document).ready ->
+$(window).load ->
   getdocH = $(document).height()
   getwinH = $(window).height()
   getwinW = $(window).width()

@@ -25,10 +25,9 @@
 //= require jquery.mCustomScrollbar.concat.min
 //= require accordion-main
 //= require menu
-//= require turbolinks
 
 
-document.addEventListener("turbolinks:load", function() {
+$(document).ready(function(){
 	////////////////////
 	/*$('#desktopnemu').meanmenu({
 	    meanScreenWidth     : "800",
@@ -153,7 +152,7 @@ document.addEventListener("turbolinks:load", function() {
 	})
 	/////
 });
-document.addEventListener("turbolinks:load", function() {
+$(window).load(function() {
     var getdocH = $(document).height();
     var getwinH = $(window).height();
     var getwinW = $(window).width();
