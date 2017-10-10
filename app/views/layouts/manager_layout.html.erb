@@ -24,6 +24,9 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
           <div class="left-panel">
+            <% flash.each do |message_type, message| %>
+              <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
+            <% end %>
             <%= yield %>
           </div>
         </div>

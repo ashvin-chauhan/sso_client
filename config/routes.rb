@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'developers/restful_api'
+
   get 'unauthorized/show'
 
   root to: 'home#show'
@@ -13,6 +15,7 @@ Rails.application.routes.draw do
   		get 'admin'
   		get 'manager'
   		get 'developer'
+      get 'developers/restful_api'
   	end
   end
 end

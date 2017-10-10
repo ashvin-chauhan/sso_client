@@ -1,14 +1,18 @@
 <div id="top-banner">
-      <div class="inner-banner">
-        <div class="up-info">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-12">
-                <%= current_user[:role] == "admin" ? "Administrator’s Documentation" : "User’s Documentation"%>
-              </div>
-            </div>
+  <div class="inner-banner">
+    <div class="up-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            <% if params[:controller] == "users" && params[:action] == "admin" %>
+              Administrator’s Documentation
+            <% elsif params[:controller] == "users" && params[:action] == "manager" %>
+              User's Documentation
+            <% end %>
           </div>
         </div>
-        <%= image_tag "administrator_documentation.jpg" %>
       </div>
     </div>
+    <%= image_tag "administrator_documentation.jpg" %>
+  </div>
+</div>
