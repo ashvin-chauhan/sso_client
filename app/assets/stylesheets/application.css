@@ -11,6 +11,7 @@
  * file per style scope.
  *
  *= require_self
+ *= require jquery-ui/datepicker
  *= require bootstrap.min
  *= require bootstrap-theme.min
  *= require font-awesome.min
@@ -24,6 +25,7 @@
  *= require theme
  *= require style
  *= require responsive
+ *= require custom
  */
 
 .alert-notice, .alert-alert{
