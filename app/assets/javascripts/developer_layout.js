@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui/autocomplete
 //= require owl.carousel
 //= require tether.min
 //= require bootstrap.min
@@ -25,6 +26,7 @@
 //= require jquery.mCustomScrollbar.concat.min
 //= require accordion-main
 //= require menu
+//= require autocomplete_sidebar_links
 
 
 $(document).ready(function(){
@@ -179,4 +181,7 @@ $(window).load(function() {
     ///
     var imgHn = $('#db_one').height();
     $('#top-banner').css({ 'min-height': imgHn });
+
+
 });
+

@@ -13,6 +13,7 @@
 
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui/autocomplete
 //= require owl.carousel
 //= require tether.min
 //= require bootstrap.min
@@ -27,6 +28,7 @@
 //= require jquery.mCustomScrollbar.concat.min
 //= require jquery-equal-height
 //= require menu
+//= require autocomplete_sidebar_links
 
 $(document).ready(function(){
 	////////////////////

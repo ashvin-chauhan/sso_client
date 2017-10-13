@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   		get 'manager'
   		get 'developer'
       get 'developers/restful_api'
+      get 'autocomplete_sidebar_links'
       get 'logout'
   	end
   end

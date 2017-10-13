@@ -14,7 +14,9 @@
       </div>
       <div class="col-xs-12 col-sm-6 col-md-6">
         <div class="search-holder">
-          <button type="submit">search</button><input name="" type="text">
+          <button type="submit">search</button>
+          <input type="text" id="available-link-search-txt" autofocus>
+          <div class="results" id="available-link-search-results"></div>
         </div>
       </div>
       <div class="col-xs-12 col-sm-4 col-md-4">
@@ -50,3 +52,7 @@
     </div>
   </div>
 </header>
+
+<script>
+  new jekyllApp.Links;
+</script>
