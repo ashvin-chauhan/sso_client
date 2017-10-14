@@ -8,7 +8,7 @@ jekyllApp.Links.prototype = {
 	_initAutocomplete: function() {
 		this._input
 		  .autocomplete({
-		    source: '/users/autocomplete_sidebar_links',
+		    source: 'users/autocomplete_sidebar_links',
 		    appendTo: '#available-link-search-results',
 		    select: $.proxy(this._select, this)
 		  })
