@@ -21,11 +21,12 @@ class UsersController < ApplicationController
 
   def autocomplete_sidebar_links
     require 'json'
+
     @filter_links = @links.select { |data| data['title'].downcase.include? params[:term].downcase }
     unless @filter_links.count > 0; @filter_links = [{"title" => "No results found!", "url" => ""}]; end
 
     respond_to do |format|
-      format.html
+      format.html { @filter_links = Kaminari.paginate_array(@filter_links).page(params[:page]).per(params[:per] || 10) }
       format.json { @filter_links }
     end
   end

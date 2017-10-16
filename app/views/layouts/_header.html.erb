@@ -14,9 +14,11 @@
       </div>
       <div class="col-xs-12 col-sm-6 col-md-6">
         <div class="search-holder">
-          <button type="submit">search</button>
-          <input type="text" id="available-link-search-txt" autofocus>
+        <%= form_tag autocomplete_sidebar_links_users_path, method: :get do %>
+          <%= text_field_tag "term", nil, id: "available-link-search-txt", autofocus: true %>
           <div class="results" id="available-link-search-results"></div>
+          <button type="submit">search</button>
+        <% end %>
         </div>
       </div>
       <div class="col-xs-12 col-sm-4 col-md-4">

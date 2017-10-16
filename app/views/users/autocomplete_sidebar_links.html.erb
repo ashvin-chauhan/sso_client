@@ -1,0 +1,13 @@
+<div class="container ">
+	<div class="row justify-content-md-end">
+		<div class="col-xs-12 col-sm-12 col-md-12 search-result">
+			<% @filter_links.each do |filter_link| %>
+				<div class="loop-box">
+					<h2 class="m-b-0"><strong><%= filter_link['title'] %></strong></h2>
+					<span><%= link_to filter_link['url'], filter_link['url'] %></span>
+				</div>
+			<% end %>
+			<%= paginate @filter_links %>
+		</div>
+	</div>
+</div>
