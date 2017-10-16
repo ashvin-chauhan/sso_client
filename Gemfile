@@ -27,10 +27,6 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
-gem 'omniauth', '~> 1.3.1'
-gem 'omniauth-auth0', '~> 1.4.1'
-gem 'dotenv-rails', '~> 0.11.1'
 gem 'jquery-ui-rails'
 
 group :development, :test do
@@ -48,5 +44,13 @@ group :development do
   gem 'pry'
 end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# For authentication
+gem 'omniauth', '~> 1.3.1'
+gem 'omniauth-auth0', '~> 1.4.1'
+
+# Load environment variables from .env into ENV in development
+gem 'dotenv-rails', '~> 0.11.1'
+
+# For pagination
+gem 'kaminari'
+
