@@ -1,58 +1,72 @@
 [
 	{
 		"title": "A: Manager link 1",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["manager", "a", "link", "google"]
 	},
 	{
 		"title": "B: Manager link 2",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["manager", "b", "link", "google"]
 	},
 	{
 		"title": "C: Manager link 3",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["manager", "c", "link", "google"]
 	},
 	{
 		"title": "D: Manager link 4",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["manager", "d", "link", "google"]
 	},
 	{
 		"title": "E: Manager link 5",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["manager", "e", "link", "google"]
 	},
 	{
 		"title": "F: Manager link 6",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["manager", "f", "link", "google"]
 	},
 	{
 		"title": "G: Manager link 7",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["manager", "g", "link", "google"]
 	},
 	{
 		"title": "H: Manager link 8",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["manager", "h", "link", "google"]
 	},
 	{
 		"title": "I: Manager link 9",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["manager", "i", "link", "google"]
 	},
 	{
 		"title": "J: Manager link 10",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["manager", "j", "link", "google"]
 	},
 	{
 		"title": "K: Manager link 11",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["manager", "k", "link", "google"]
 	},
 	{
 		"title": "L: Manager link 12",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["manager", "l", "link", "google"]
 	},
 	{
 		"title": "M: Manager link 13",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["manager", "m", "link", "google"]
 	},
 	{
 		"title": "N: Manager link 14",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["manager", "n", "link", "google"]
 	}
 ]

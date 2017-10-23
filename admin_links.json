@@ -1,50 +1,62 @@
 [
 	{
 		"title": "A: Admin link 1",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["admin", "a", "link", "google"]
 	},
 	{
 		"title": "B: Admin link 2",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["admin", "b", "link", "google"]
 	},
 	{
 		"title": "C: Admin link 3",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["admin", "c", "link", "google"]
 	},
 	{
 		"title": "D: Admin link 4",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["admin", "d", "link", "google"]
 	},
 	{
 		"title": "E: Admin link 5",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["admin", "e", "link", "google"]
 	},
 	{
 		"title": "F: Admin link 6",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["admin", "f", "link", "google"]
 	},
 	{
 		"title": "G: Admin link 7",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["admin", "g", "link", "google"]
 	},
 	{
 		"title": "H: Admin link 8",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["admin", "h", "link", "google"]
 	},
 	{
 		"title": "I: Admin link 9",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["admin", "i", "link", "google"]
 	},
 	{
 		"title": "J: Admin link 10",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["admin", "j", "link", "google"]
 	},
 	{
 		"title": "K: Admin link 11",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["admin", "k", "link", "google"]
 	},
 	{
 		"title": "L: Admin link 12",
-		"url": "http://www.google.com"
+		"url": "http://www.google.com",
+		"tags": ["admin", "l", "link", "google"]
 	}
 ]

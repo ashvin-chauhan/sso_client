@@ -21,8 +21,7 @@ class UsersController < ApplicationController
 
   def autocomplete_sidebar_links
     require 'json'
-
-    @filter_links = @links.select { |data| data['title'].downcase.include? params[:term].downcase }
+    @filter_links = @links.select { |data| data['title'].downcase.include? params[:term].downcase || data['tags'].map{|tag| tag.downcase}.grep(/#{params[:term].downcase}/).any? }
     unless @filter_links.count > 0; @filter_links = [{"title" => "No results found!", "url" => ""}]; end
 
     respond_to do |format|
