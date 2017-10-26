@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   		get 'manager'
   		get 'developer'
       get 'developers/restful_api'
-      get 'autocomplete_sidebar_links'
+      match 'autocomplete_sidebar_links' => "users#autocomplete_sidebar_links", :as => :autocomplete_sidebar_links ,via: [ :POST ,:get ]
       get 'logout'
   	end
   end

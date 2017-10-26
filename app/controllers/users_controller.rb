@@ -22,11 +22,21 @@ class UsersController < ApplicationController
   def autocomplete_sidebar_links
     require 'json'
     @filter_links = @links.select { |data| data['title'].downcase.include? params[:term].downcase || data['tags'].map{|tag| tag.downcase}.grep(/#{params[:term].downcase}/).any? }
-    unless @filter_links.count > 0; @filter_links = [{"title" => "No results found!", "url" => ""}]; end
-
+    if params[:documentation].present? || params[:version].present? || params[:topic].present?
+        @filter_links = @filter_links.select { |a| 
+        (a['documentation'] & params[:documentation].to_a).present? ||  (a['versions'] & params[:version].to_a).present? ||  (a['topics'] & params[:topic].to_a).present? }
+        @filter_links = Kaminari.paginate_array(@filter_links).page(params[:page]).per(params[:per] || 10)
+    else
+      @documentation = @links.map{|t| t['documentation']}.flatten.compact.uniq
+      @versions = @links.map{|t| t['versions']}.flatten.compact.uniq
+      @topics = @links.map{|t| t['topics']}.flatten.compact.uniq
+      unless @filter_links.count > 0; @filter_links = [{"title" => "No results found!", "url" => ""}]; end
+      @filter_links = Kaminari.paginate_array(@filter_links).page(params[:page]).per(params[:per] || 10) 
+    end
     respond_to do |format|
-      format.html { @filter_links = Kaminari.paginate_array(@filter_links).page(params[:page]).per(params[:per] || 10) }
+      format.html { }
       format.json { @filter_links }
+      format.js { }
     end
   end
 
