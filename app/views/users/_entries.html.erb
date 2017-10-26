@@ -1,13 +1,22 @@
- <div class="search-box"><%= page_entries_info filter_links , entry_name: 'Results' %> found for Create app design </div>
+ <% if @filter_links.count > 0 %>
+ 	<div class="search-box"><%= page_entries_info filter_links , entry_name: 'Results' %> found for Create app design </div>
+ <% end %>
 <div class="row justify-content-md-end">
 	<div class="col-xs-12 col-sm-12 col-md-12 search-result">
-		<% filter_links.each do |filter_link| %>
+		<% if @filter_links.count > 0 %>
+			<% filter_links.each do |filter_link| %>
+				<div class="loop-box">
+					<h4><%= filter_link['title'] %> | 
+					<%= link_to filter_link['url'], filter_link['url'] %></h4>
+					<h5>Product PIM | Versions <%= filter_link['versions']&.join(', ') %></h5>
+		   			<p>Aug 8, 2016 - You know, apart from the most obvious search engine. And possibly the second most obvious one too.
+		    		In fact I'll start again, what are the eight. Create App Design, apart from the most obvious search engine. </p>
+				</div>
+			<% end %>
+		    <%= paginate filter_links, remote: true %>
+		<% else %>
 			<div class="loop-box">
-				<h4><%= filter_link['title'] %> | 
-				<%= link_to filter_link['url'], filter_link['url'] %></h4>
-				<h5>Product PIM | Versions <%= filter_link['versions']&.join(', ') %></h5>
-   				<p>Aug 8, 2016 - You know, apart from the most obvious search engine. And possibly the second most obvious one too.
-    			In fact I'll start again, what are the eight. Create App Design, apart from the most obvious search engine. </p>
+				<h4 class="align-center">No Result found</h4>
 			</div>
 		<% end %>
 	</div>

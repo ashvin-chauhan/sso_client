@@ -2076,3 +2076,6 @@ ul.sp-ul > li li  a{
 	color: #fac73c;
 	margin:0 0 5px 0;
 }
+.align-center{
+	text-align: center !important;
+}
