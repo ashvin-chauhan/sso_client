@@ -15,7 +15,8 @@
  *= require bootstrap.min
  *= require bootstrap-theme.min
  *= require font-awesome.min
- * require custom
+ *= require style
+ *= require custom
  */
 
 .alert-notice, .alert-alert{

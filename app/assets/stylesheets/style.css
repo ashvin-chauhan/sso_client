@@ -105,19 +105,6 @@ header .search-holder button{
 	text-indent:50px;
 	line-height:50px;
 }
-header .language-holder{
-	width:auto;
-	height:auto;
-	display:inline-block;
-	float:left;
-	position:relative;
-	top:50%;
-	transform:translateY(-50%);
-	background:url(language-icon.png) no-repeat 0 50%;
-	padding:0 0 0 25px;
-	margin-right:18px;
-	display:none;
-}
 .selectric .button{
 	bottom:inherit;
 	top:50%;
@@ -407,28 +394,6 @@ header .others-holders{
 	width:100%;
 	/*padding-right:20px;*/
 }
-.right-panel .link-loop ul li a{
-	width:100%;
-	height:auto;
-	display:block;
-	box-sizing:border-box;
-	background:url(arrow-right.svg) 93% 50% no-repeat;
-	background-size:auto 13px;
-	font-family: 'Lato', sans-serif;
-	font-size: 15px;
-	text-align: left;
-	color: #ffffff;
-	font-weight:300;
-	line-height:36px;
-	
-	transition:all 0.3s;
-	-moz-transition:all 0.3s;
-	-webkit-transition:all 0.3s;
-	-o-transition:all 0.3s;
-	position:relative;
-	box-sizing:border-box;
-	padding:0 20px;
-}
 /*.right-panel .link-loop ul li a:after,
 .right-panel .link-loop ul li a:before{
 	transition:all 0.3s;
@@ -494,20 +459,6 @@ header .others-holders{
 	display:block;
 	padding:5px 0 0;
 	overflow:hidden;
-}
-.left-panel .welocme-block{
-	width:100%;
-	height:auto;
-	display:block;
-	padding:58px 30px 50px 30px;
-	box-sizing:border-box;
-	background:url(welocme-bg.jpg) repeat-y;
-	background-size:100% auto;
-	border-radius: 5px 5px 0px 0px;
-	-moz-border-radius: 5px 5px 0px 0px;
-	-webkit-border-radius: 5px 5px 0px 0px;
-	border: 0px solid #000000;
-	position:relative;
 }
 .left-panel .welocme-block figcaption{
 	width:100%;
@@ -1448,9 +1399,6 @@ ul.sp-ul > li li  a{
   line-height: 1.5;
   margin: 0;
 }
-.site-footer p.email a:before {
-  background: rgba(0, 0, 0, 0) url("ic_footer_at.svg") no-repeat scroll left center / 23px auto;
-}
 .site-footer p.phone a:before, .site-footer p.email a:before {
   content: "";
   height: 25px;
@@ -1475,10 +1423,6 @@ ul.sp-ul > li li  a{
 .site-footer a:hover{
 	opacity: 0.7;
 
-}
-.site-footer p.phone a:before {
-  background: rgba(0, 0, 0, 0) url("ic_footer_phone.svg") no-repeat scroll left center / 21px auto;
-  top: 2px;
 }
 .site-footer p.copyright {
   
