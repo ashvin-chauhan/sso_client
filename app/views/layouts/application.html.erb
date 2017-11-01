@@ -18,16 +18,16 @@
 <body>
   <div id="hand-over"></div>
   <%= render  'layouts/header' %>
-  <%= render 'layouts/sidebar' %>
-  <div class="page-wapper o-wrapper" id="o-wrapper">
-    <div class="container">
+  <%#= render 'layouts/sidebar' %>
+  <!-- <div class="page-wapper o-wrapper" id="o-wrapper">
+    <div class="container"> -->
       <% flash.each do |message_type, message| %>
         <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
       <% end %>
       <%= yield %>
-    </div>
+    <!-- </div>
   </div>
-  <div id="c-mask" class="c-mask"></div>
-  <%= render 'layouts/footer' %>
+  <div id="c-mask" class="c-mask"></div> -->
+  <%#= render 'layouts/footer' %>
 </body>
 </html>

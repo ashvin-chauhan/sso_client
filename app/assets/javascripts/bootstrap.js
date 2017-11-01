@@ -1425,6 +1425,7 @@ var Dropdown = function ($) {
     // public
 
     Dropdown.prototype.toggle = function toggle() {
+      console.log('toggle')
       if (this.disabled || $(this).hasClass(ClassName.DISABLED)) {
         return false;
       }
