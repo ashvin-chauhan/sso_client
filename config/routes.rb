@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get '/auth/failure' => 'auth0#failure'
   get '/auth/sso' => 'auth0#sso'
   get '/auth/logout' => 'auth0#logout'
+  get '/docs' => "home#docs"
 
   resources :users, only: [] do
   	collection do
