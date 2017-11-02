@@ -5,22 +5,22 @@ class UsersController < ApplicationController
 
   def super_admin
     redirect_to root_path, notice: "You are not authorized." unless current_user[:role] === "super_admin"
-    @source = open("http://localhost:5000/"){|f|f.read}
+    @source = open(ENV["REVERSAND_JEKYLL_PATH"]){|f|f.read}
   end
 
   def admin
     redirect_to root_path, notice: "You are not authorized." unless current_user[:role] === "admin" || current_user[:role] === "super_admin"
-    @source = open("http://localhost:5000/admin"){|f|f.read}
+    @source = open(ENV["REVERSAND_JEKYLL_PATH"] + "/admin"){|f|f.read}
   end
 
   def manager
     redirect_to root_path, notice: "You are not authorized." unless current_user[:role] === "manager" || current_user[:role] === "super_admin"
-    @source = open("http://localhost:5000/manager"){|f|f.read}
+    @source = open(ENV["REVERSAND_JEKYLL_PATH"] + "/manager"){|f|f.read}
   end
 
   def developer
     redirect_to root_path, notice: "You are not authorized." unless current_user[:role] === "developer" || current_user[:role] === "super_admin"
-    @source = open("http://localhost:5000/developer"){|f|f.read}
+    @source = open(ENV["REVERSAND_JEKYLL_PATH"] + "/developer"){|f|f.read}
   end
 
   def autocomplete_sidebar_links
@@ -31,13 +31,15 @@ class UsersController < ApplicationController
     @topics = @links.map{|t| t['topics']}.flatten.compact.uniq
 
     if params[:documentation].present? || params[:version].present? || params[:topic].present?
-        @filter_links = @filter_links.select { |a| 
+        @filter_links = @filter_links.select { |a|
         (a['documentation'] & params[:documentation].to_a).present? ||  (a['versions'] & params[:version].to_a).present? ||  (a['topics'] & params[:topic].to_a).present? }
     end
 
     respond_to do |format|
       format.html { @filter_links = Kaminari.paginate_array(@filter_links).page(params[:page]).per(params[:per] || 10)  }
-      format.json { @filter_links }
+      format.json {
+        @filter_links.present? ? @filter_links : @filter_links = [{"title" => "No results found!", "url" => ""}]
+      }
       format.js { @filter_links = Kaminari.paginate_array(@filter_links).page(params[:page]).per(params[:per] || 10) }
     end
   end
@@ -61,7 +63,7 @@ class UsersController < ApplicationController
   def get_user_links
     case current_user[:role]
     when "super_admin"
-      @links = JSON.parse(File.read("super_admin_links.json"))
+      @links = JSON.parse(File.read("super_admin_links.json")) + JSON.parse(File.read("admin_links.json")) + JSON.parse(File.read("manager_links.json")) + JSON.parse(File.read("developer_links.json"))
     when "admin"
       @links = JSON.parse(File.read("admin_links.json"))
     when "manager"
