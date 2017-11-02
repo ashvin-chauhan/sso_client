@@ -21,7 +21,7 @@ $(document).ready(function(){
     if(link_url.indexOf("/docs") > 0 && link_url.indexOf("http://") == 0)
     {
       var new_link_url = link_url.split("/docs/").pop();
-      jekyll_links[i].href = "/docs?page=" + new_link_url
+      jekyll_links[i].href = "docs?page=" + new_link_url
     }
     i++ ;
   }
