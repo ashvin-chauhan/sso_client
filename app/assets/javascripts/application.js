@@ -15,7 +15,7 @@
 //= require jquery_ujs
 //= require jquery-ui/autocomplete
 //= require tether.min
-//= require bootstrap.min
+// require bootstrap.min
 //= require autocomplete_sidebar_links
 
 
