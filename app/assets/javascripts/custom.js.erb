@@ -5,11 +5,11 @@ $(document).ready(function(){
   while(i < super_admin_links.length){
     var element_id = super_admin_links[i].id;
     if(element_id == "developer-link"){
-      super_admin_links[i].href = "/users/developer";
+      super_admin_links[i].href = "users/developer";
     }else if(element_id == "manager-link"){
-      super_admin_links[i].href = "/users/manager";
+      super_admin_links[i].href = "users/manager";
     }else if(element_id == "admin-link"){
-      super_admin_links[i].href = "/users/admin";
+      super_admin_links[i].href = "users/admin";
     }
     i++;
   }
