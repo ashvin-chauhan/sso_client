@@ -28,7 +28,7 @@ $(document).ready(function(){
 
   $('.pdf-bt').click(function(e){
     var url = $("ul.auth-service li a.active").attr('data-attribute-page')
-    var new_url = "<%= ENV['REVERSAND_JEKYLL_PATH'] %>" + url
+    var new_url = "<%= ENV['REVERSAND_JEKYLL_PATH'] %>" + "<%= ENV['REVERSAND_JEKYLL_DOC'] %>" + url
     window.open(new_url)
     return false;
   })
